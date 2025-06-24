@@ -97,15 +97,29 @@ img{
 }
 
 .project-grid{
-    display: grid;
-    
- grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   column-gap: 10px;
+   display:flex ;
+   justify-content: space-evenly;
+   
+
+
 }
 .project1{
-    fla
+    max-width: 30%;
+    align-content: baseline;
+}
+.project2{
+    max-width: 30%;
+    align-content: baseline;
+}
+.project3{
+    max-width: 30%;
     
 }
 @keyframes hero{
     from{transform: translateX(200px);}
+}
+footer{
+    display: block;
+    background-color: #FF9966;
+    
 }
