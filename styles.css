@@ -1,0 +1,157 @@
+body{
+   
+    background-color:#FFA472;
+}
+.dark-mode{
+    background-color: #511D43;
+    color: white;
+}
+h1{ 
+     font-family: "Playfair Display", serif;
+}
+
+p{
+    font-family: "Karla", sans-serif;
+}
+
+.navbar{
+    background-color: #FF9966;
+    width:100%;
+    box-shadow: inset, black;
+    border: #FF9966;
+    
+}
+.navbar-dark-mode{
+    background-color: #511D43;
+    color: white;
+}
+
+.navbar ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+     
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+
+}
+img{
+    align-items: center;
+    width: 700px;
+    padding-left: 250px;
+}
+#profileborder{
+    
+    border-radius: 200px;
+    background-color: #38AECC;
+    position: relative;
+}
+.profile-dark-mode{
+    background-color: #901E3E !important;
+    color: white;
+}
+.pic-dark-mode{
+    border-radius: 200px;
+    background-color: #DC2525 !important;
+}
+#profilepic{
+    max-width: 30%;
+    border-radius: 200px;
+   margin: 20px;
+    padding: 30px;
+    background-color: #F9DC5C;
+}
+
+.hero{
+    position: relative;
+    text-align: center;
+    
+    font-size: 30px;
+    padding-left: 15px;
+    animation-name: hero ;
+    animation-duration: 3s;
+    
+}
+
+.hero-descript{
+     position: relative;
+    word-wrap: break-word;
+    border-radius: 200px;
+    margin: 20px;
+    width: 60%;
+}
+
+
+#aboutme{
+    margin: 10px;
+    background-color: bisque;
+    display: block;
+    width: 100%;
+    padding: 30px;
+    line-height: 1.5;
+    border-radius: 50px;
+    
+}
+.aboutme-dark-mode{
+    background-color: #901E3E !important;
+    color: white;
+}
+
+#aboutme h3{
+    text-align: center;
+    font-size: 26px;
+    font-family: "Playfair Display", serif;
+}
+
+.container{
+        width: 90%;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 20px;
+}
+.mywork{
+    padding: 80px;
+    background: #38AECC;
+    border-radius: 50px;
+    margin: 20px;
+}
+.mywork-dark-mode{
+    background-color: #901E3E;
+    color: white;
+}
+
+.project-grid{
+   display:flex ;
+   justify-content: space-evenly;
+   
+
+
+}
+.project1{
+    width: 100px;
+    align-content: baseline;
+}
+.project2{
+    width: 100px;
+    align-content: baseline;
+}
+.project2{
+    width: 100px;
+    align-content: baseline;
+}
+.project3{
+    width: 100px;
+
+}
+@keyframes hero{
+    from{transform: translateX(200px);}
+}
+footer{
+    display: block;
+    background-color: #FF9966;
+    
+}
