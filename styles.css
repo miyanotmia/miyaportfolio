@@ -1,7 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* no horizontal scrollbar */
+  overflow-x: hidden;
+  
 }
 .dark-mode{
     background-color: #511D43;
@@ -19,12 +20,12 @@ p{
 .header{
    background-color: #FF8DA1;
   width: 100%;
-  min-height: 100vh;        /* full screen height */
-  display: flex;            /* flexbox for alignment */
-  flex-direction: column;   /* stack h1 above h3 */
-  justify-content: center;  /* vertical centering */
-  align-items: center;      /* horizontal centering */
-  text-align: center;       /* center text inside */
+  min-height: 100vh;        
+  display: flex;            
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;       
   padding: 0 1rem;  
    
 }
@@ -50,30 +51,28 @@ p{
   margin-bottom: 10px;
 }
 .socials-icon{
-   display: flex; 
-  justify-content: center;
-  align-items: center;  
-  gap: 5px;  
+ display: flex;
+ width: 30px;
+    margin:0;  
 }
 
-.socials-icon img{
-   width: 30px;
-    margin:0;
-    display: block;
-   
-    
-}
+
 .socials-icon a {
   display: flex;  
   flex: 0 0 auto; 
     width: 60px;               
-  height: 60px;        
+  height: 60px; 
+  justify-content: center;  
+  align-content: center;
+  padding-left: 150px;    
 }
+
 .navbar{
-    background-color: #FF9966;
-    width:100%;
+    background-color: #ff375a;
+    width: 100%;
+    height: 75%;
     border-radius: 20px;
-    margin-top: 250px;
+    margin-top: 150px;
 }
 .navbar-dark-mode{
     background-color: #511D43;
@@ -92,17 +91,141 @@ p{
     text-decoration: none;
 
 }
-img{
+.enterdark button{
+font-family: "Libre Caslon Text", serif;
+font-size: 20px;
+color: white;
+border-radius: 50px;
+background-color: #961D40;
+
+
+}
+
+#typewrite {
+  display: inline-block;
+  white-space: nowrap;   /* keep text in one line */
+}
+
+#typewrite span {
+  display: inline-block; /* ensures uniform box alignment */
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  vertical-align: baseline; /* keeps all characters on the same line */
+}
+#typewrite span.visible {
+  opacity: 1;
+}
+.hero{
+    position: relative;
+    text-align: center;
+    margin: 50px;
+    font-size: 30px;
+    padding-left: 15px;
+    
+    
+}
+.profileborder img{
     align-items: center;
     width: 700px;
     padding-left: 250px;
 }
-#profileborder{
+.profileborder{
     
     border-radius: 200px;
-    background-color: #38AECC;
+    background-color: #ff4768;
     position: relative;
 }
+
+#profilepic {
+    max-width: 30%;
+    border-radius: 200px;
+   margin: 20px;
+    padding: 30px;
+    background-color: white;
+}
+
+
+#aboutme{
+   display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 2rem;                 
+  align-items: center;            
+  padding: 2rem;
+    max-width: 1200px;
+    margin: 0;
+}
+
+#aboutme h3{
+  font-family: "Rock Salt";
+  font-size: 28px;
+  margin: 16px;
+}
+#aboutme p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Libre Caslon Text", serif;
+}
+
+.aboutimg img{
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    display:block;
+}
+.aboutimg{
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+.projects-container{
+    padding:2rem;
+    max-width:1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.projects-container h2{
+    text-align: center;
+}
+.project-grid{
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 2rem;
+   margin: 2rem;
+   
+}
+.project-card{
+background-color: white;
+border-radius: 12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+padding: 1rem;
+text-align: center;
+transition: 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card img{
+    width: 100%;
+    height: auto;
+    border-radius:8px;
+    margin-bottom: 1rem;
+}
+.project-card h3{
+    margin: 0.5rem 0;
+    font-size: 16px;
+    font-family: "Rock Salt";
+}
+.project-card p{
+    font-family: "Libre Caslon Text", serif;
+    font-size: 12px;
+}
+
+/*DARK MODE SECTION*/
+
 .profile-dark-mode{
     background-color: #901E3E !important;
     color: white;
@@ -111,94 +234,18 @@ img{
     border-radius: 200px;
     background-color: #DC2525 !important;
 }
-#profilepic{
-    max-width: 30%;
-    border-radius: 200px;
-   margin: 20px;
-    padding: 30px;
-    background-color: #F9DC5C;
-}
-
-.hero{
-    position: relative;
-    text-align: center;
-    
-    font-size: 30px;
-    padding-left: 15px;
-    animation-name: hero ;
-    animation-duration: 3s;
-    
-}
-
-#hero-descript{
-     position: relative;
-    word-wrap: break-word;
-    border-radius: 200px;
-    margin: 20px;
-    width: 60%;
-}
-
-
-#aboutme{
-    margin: 10px;
-    background-color: bisque;
-    display: block;
-    width: 90%;
-    padding: 30px;
-    line-height: 1.5;
-    border-radius: 50px;
-    
-}
 .aboutme-dark-mode{
     background-color: #901E3E !important;
     color: white;
 }
 
-#aboutme h3{
-    text-align: center;
-    font-size: 26px;
-    font-family: "Playfair Display", serif;
-}
-
-.container{
-        width: 90%;
-    max-width: 75rem;
-    margin: 0 auto;
-    padding: 20px;
-}
-.mywork{
-    padding: 80px;
-    background: #38AECC;
-    border-radius: 50px;
-    margin: 20px;
-}
 .mywork-dark-mode{
     background-color: #901E3E;
     color: white;
 }
-
-.project-grid{
-   display:flex ;
-   justify-content: space-evenly;
-   
-
-
-}
-.project1{
-    width: 100px;
-    align-content: baseline;
-}
-.project2{
-    width: 100px;
-    align-content: baseline;
-}
-.project2{
-    width: 100px;
-    align-content: baseline;
-}
-.project3{
-    width: 100px;
-
+.header-dark-mode{
+    background-color: #961D40
+!important;
 }
 @keyframes hero{
     from{transform: translateX(200px);}
@@ -210,10 +257,14 @@ footer{
 }
 
 @media (max-width: 768px) {
-  .portfolio h1 { font-size: 60px; }   /* shrink heading on tablets/small laptops */
+  .portfolio h1 { font-size: 60px; } 
+  .about {
+    grid-template-columns: 1fr;   /* collapse to one column */
+    text-align: center;
+  }  
 }
 
 @media (max-width: 480px) {
-  .portfolio h1 { font-size: 40px; }   /* shrink heading further on phones */
-  .portfolio h3 { font-size: 18px; }   /* shrink subheading on phones */
+  .portfolio h1 { font-size: 40px; }   
+  .portfolio h3 { font-size: 18px; }   
 }

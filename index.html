@@ -10,10 +10,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Rock+Salt&display=swap" rel="stylesheet">
 
-    <!--Old fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   
+ 
   </head>
 <body>
 <section class="header">
@@ -34,53 +32,63 @@
 <li><a href="Let's-Connect.html">Let's Connect</a></li>
 <li><a href="#aboutme">About Me</a></li>
 </ul>
-</nav class="enter-dark">
-<div>
-  <button onclick="myFunction()">Toggle Dark Mode</button>
+</nav >
+<div class="enterdark">
+  <button onclick="darkMode()">Dark Mode</button>
 </div>
 </header>
 </section>
 <!--Hero Section-->
 
 <section class="hero">
- <div id="profileborder"> <img src="Assets/miya.jpg" alt="Miya-Simms" width="300" height="300" id="profilepic"></div>
+ <div class="profileborder"> <img src="Assets/miya.jpg" alt="Miya-Simms" width="300" height="300" id="profilepic"></div>
   <div >
 
-    <h1>Hey there, I'm <span>Miya Simms</span></h1>
+    <h1>Hey there, I'm <span id="typewrite">Miya Simms</span></h1>
 <p>Frontend Developer Student | Manual Tester </p>
 
 </div>
 </section>
+
 <!--About Me-->
-<section class="aboutme">
+<section id="aboutme">
 <div>
 
 <h3>Thoughtful craft, resourceful solutions, endless curiosity</h3>
   <p>Emerging Frontend developer with a foundation in quality assurance and technical support, where I learned to approach code with meticulous attention to detail while maintaining 95-100% customer satisfaction.<br> My experience spans from comprehensive software testing and debugging to creating engaging digital content and optimizing user experiences through data-driven insights.<br> With certifications in HTML & CSS, Adobe Photoshop, and Google Analytics, I bring reliable technical skills and endless curiosity to create websites that captivate and convert.</p>
-  
+ 
 </div>
+ <div class="aboutimg">
+<img src="./Assets/flower-card.png" alt="transparent-flower-collage">
+  </div>
 </section>
 <!--My Projects-->
-<section id="mywork" class="mywork">
-<div class="container">
-  <h2>My Projects</h2>
+<section >
+<div class="project-container">
+  <h2>Projects</h2>
   <div class="project-grid">
 
-    <div class="project1">
+    <div class="project-card">
   <img src="Assets/growtika-unsplash-projectdemo.jpg" alt="placeholder image">
   <h3>Placeholder Project 1</h3>
   <p>Placeholder project description</p>
 </div>
 
-<div class="project2">
+
+<div class="project-card">
     <img src="Assets/growtika-unsplash-projectdemo1.jpg" alt="placeholder image">
   <h3>Placeholder Project 2</h3>
   <p>Placeholder project description</p>
 </div>
 
-<div class="project3">
+<div class="project-card">
   <img src="Assets/growtika-unsplash-projectdemo2.jpg" alt="placeholder image">
-  <h3>Placeholder Project </h3>
+  <h3>Placeholder Project 3 </h3>
+  <p>Placeholder project description</p>
+</div>
+<div class="project-card">
+  <img src="Assets/growtika-unsplash-projectdemo.jpg" alt="placeholder image">
+  <h3>Placeholder Project 4</h3>
   <p>Placeholder project description</p>
 </div>
 </div>
