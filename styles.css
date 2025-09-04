@@ -1,4 +1,8 @@
-
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* no horizontal scrollbar */
+}
 .dark-mode{
     background-color: #511D43;
     color: white;
@@ -11,43 +15,72 @@ p{
     font-family: "Karla", sans-serif;
 }
 
+
+.header{
+   background-color: #FF8DA1;
+  width: 100%;
+  min-height: 100vh;        /* full screen height */
+  display: flex;            /* flexbox for alignment */
+  flex-direction: column;   /* stack h1 above h3 */
+  justify-content: center;  /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  text-align: center;       /* center text inside */
+  padding: 0 1rem;  
+   
+}
+
+.heading{
+    margin-top: 100px;
+}
+.heading h1{
+     font-family: "Libre Caslon Text", serif;
+    font-size: 100px;
+    font-weight: 200;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+.heading h3{
+    font-family: "Rock Salt";
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;   
+  margin-bottom: 10px;
+}
+.socials-icon{
+   display: flex; 
+  justify-content: center;
+  align-items: center;  
+  gap: 5px;  
+}
+
+.socials-icon img{
+   width: 30px;
+    margin:0;
+    display: block;
+   
+    
+}
+.socials-icon a {
+  display: flex;  
+  flex: 0 0 auto; 
+    width: 60px;               
+  height: 60px;        
+}
 .navbar{
     background-color: #FF9966;
     width:100%;
-    box-shadow: inset, black;
-    border: #FF9966;
-    
+    border-radius: 20px;
+    margin-top: 250px;
 }
 .navbar-dark-mode{
     background-color: #511D43;
     color: white;
 }
-.portfolio{
-   
-    background-color: #FF8DA1;
-     width: 100vw; 
-}
-.portfolio img{
-    border-radius: 10px;
-    width: 50px;
-    
-}
-.portfolio h1{
-     font-family: "Libre Caslon Text", serif;
-    font-size: 100px;
-    font-weight: 200;
-    padding: 5% 25%;
-    display: flex;
-    /*text-align: center;*/
-    justify-content: center;
-    align-items: center;
-}
-.portfolio h3{
-    font-family: "Rock Salt";
-    font-size: 25px;
-}
 .navbar ul{
-    display:flex;
+   display:flex;
     justify-content: space-evenly;
     list-style: none;
     font-family: "Playfair Display", serif;
@@ -176,4 +209,11 @@ footer{
     
 }
 
-@media only screen and (max-width:992px)
+@media (max-width: 768px) {
+  .portfolio h1 { font-size: 60px; }   /* shrink heading on tablets/small laptops */
+}
+
+@media (max-width: 480px) {
+  .portfolio h1 { font-size: 40px; }   /* shrink heading further on phones */
+  .portfolio h3 { font-size: 18px; }   /* shrink subheading on phones */
+}
